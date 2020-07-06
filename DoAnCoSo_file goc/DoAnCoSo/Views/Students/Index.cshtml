@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DoAnCoSo.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function DownloadExcel()
+    {
+        window.location.href = "/Students/Download";
+    }
+</script>
+<table class="table-list">
+    <thead>
+        <tr>
+            <th>
+                Họ
+            </th>
+            <th>
+                Tên
+            </th>
+            <th>
+                Ngày Sinh
+            </th>
+            <th>
+                Giới tính
+            </th>
+            <th>
+                Địa chỉ thường trú
+            </th>
+            <th>
+                Thao tác
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ho)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ten)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Diachithuongtru)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MSSV }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MSSV }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MSSV })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button onclick="DownloadExcel()" class="btn btn-success" sytle="margin-top:20px;">Xuất dữ liệu ra file excel</button>

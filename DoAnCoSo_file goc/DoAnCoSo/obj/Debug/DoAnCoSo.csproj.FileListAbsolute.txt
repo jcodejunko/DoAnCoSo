@@ -1,0 +1,104 @@
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\ApplicationInsights.config
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\csc.exe
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\vbc.exe
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\VBCSCompiler.exe
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.dll.config
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.pdb
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Web.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Helpers.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Mvc.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Razor.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Razor.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Web.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Razor.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Razor.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Helpers.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\System.Web.Mvc.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.csprojResolveAssemblyReference.cache
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.pdb
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EntityFramework.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EntityFramework.SqlServer.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EntityFramework.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EntityFramework.SqlServer.xml
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EPPlus.dll
+C:\Users\Viet\Desktop\New folder\DoAnCoSo\DoAnCoSo\bin\EPPlus.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\ApplicationInsights.config
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\csc.exe
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\vbc.exe
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\VBCSCompiler.exe
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.dll.config
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\DoAnCoSo.pdb
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EntityFramework.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EntityFramework.SqlServer.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EPPlus.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Web.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Helpers.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Mvc.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Razor.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Razor.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EntityFramework.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EntityFramework.SqlServer.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\EPPlus.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.Web.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Razor.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Webpages.Razor.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Helpers.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\bin\System.Web.Mvc.xml
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.csprojResolveAssemblyReference.cache
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.dll
+C:\Users\viet1\Downloads\DoAnCoSo\DoAnCoSo\obj\Debug\DoAnCoSo.pdb
