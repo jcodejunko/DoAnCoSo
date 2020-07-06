@@ -12,7 +12,7 @@ namespace DoAn.Models
         string strCon;
         public DBConnection()
         {
-            strCon = ConfigurationManager.ConnectionStrings["StudentsEntities"].ConnectionString;
+            strCon = ConfigurationManager.ConnectionStrings["ThongKeThongTinSinhVien"].ConnectionString;
         }
         public SqlConnection getConnection()
         {

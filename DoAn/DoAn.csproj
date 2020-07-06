@@ -133,32 +133,57 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DanToc.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DBConnection.cs" />
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+    <Compile Include="Models\KhoaHoc.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\Lop.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Compile Include="Models\NghanhHoc.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Student.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Models\QuanHuyen.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sinhvien.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\StudentManager.cs" />
+    <Compile Include="Models\ThongKeThongTinSinhVien.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThongKeThongTinSinhVien.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThongKeThongTinSinhVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThongKeThongTinSinhVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThongKeThongTinSinhVien.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TinhThanh.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TonGiao.cs">
+      <DependentUpon>ThongKeThongTinSinhVien.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Students.mdf" />
     <Content Include="App_Data\Students_log.ldf">
       <DependentUpon>Students.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ThongKeThongTinSinhVien.mdf" />
+    <Content Include="App_Data\ThongKeThongTinSinhVien_log.ldf">
+      <DependentUpon>ThongKeThongTinSinhVien.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -168,24 +193,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Model1.Context.tt">
+    <Content Include="Models\ThongKeThongTinSinhVien.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>ThongKeThongTinSinhVien.edmx</DependentUpon>
+      <LastGenOutput>ThongKeThongTinSinhVien.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Model1.tt">
+    <Content Include="Models\ThongKeThongTinSinhVien.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>ThongKeThongTinSinhVien.edmx</DependentUpon>
+      <LastGenOutput>ThongKeThongTinSinhVien.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
+    <EntityDeploy Include="Models\ThongKeThongTinSinhVien.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>ThongKeThongTinSinhVien.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Models\ThongKeThongTinSinhVien.edmx.diagram">
+      <DependentUpon>ThongKeThongTinSinhVien.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

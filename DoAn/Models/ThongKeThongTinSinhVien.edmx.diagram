@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aba40254d75b4014ad2cf1f103510989" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.DanToc" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.KhoaHoc" Width="1.5" PointX="0.625" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.Lop" Width="1.5" PointX="0.625" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.NghanhHoc" Width="1.5" PointX="5.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.QuanHuyen" Width="1.5" PointX="5.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.Sinhvien" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.TinhThanh" Width="1.5" PointX="5.875" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThongKeThongTinSinhVienModel.TonGiao" Width="1.5" PointX="4.875" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaDT__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaKH__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaLop__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaNH__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaQH__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaTG__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="ThongKeThongTinSinhVienModel.FK__Sinhvien__MaTT__1DE57479" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
