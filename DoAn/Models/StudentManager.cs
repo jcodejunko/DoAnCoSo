@@ -39,11 +39,11 @@ namespace DoAn.Models
             string sql;
             if (string.IsNullOrEmpty(MSSV))
             {
-                sql = "SELECT *FROM Students";
+                sql = "SELECT * FROM Students";
             }
             else
             {
-                sql = "SELECT *FROm Students WHERE MSSV = " + MSSV;
+                sql = "SELECT * FROM Students WHERE MSSV = " + MSSV;
             }
             List<StudentManager> strList = new List<StudentManager>();
             SqlConnection con = db.getConnection();
@@ -55,11 +55,11 @@ namespace DoAn.Models
             // doong ket noi
             cmd.Dispose();
             con.Close();
-            StudentManager strStu;
+			StudentManager strStu;
             for(int i = 0; i< dt.Rows.Count;i++)
             {
-                strStu = new StudentManager();
-                strStu.MSSV = dt.Rows[i]["MSSV"].ToString();
+				strStu = new StudentManager();
+				strStu.MSSV = dt.Rows[i]["MSSV"].ToString();
                 strStu.Ho = dt.Rows[i]["Ho"].ToString();
                 strStu.Ten = dt.Rows[i]["Ten"].ToString();
                 strStu.Lop = dt.Rows[i]["Lop"].ToString();

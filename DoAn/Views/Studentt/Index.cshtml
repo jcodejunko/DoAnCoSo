@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DoAn.Models.StudentManager>
+﻿@model IEnumerable<DoAn.Models.Student>
 
 @{
     ViewBag.Title = "Index";
@@ -28,7 +28,7 @@
             @Html.DisplayNameFor(model => model.Khoa)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SDT)
+            @Html.DisplayNameFor(model => model.Sdt)
         </th>
         <th></th>
     </tr>
@@ -51,7 +51,7 @@
             @Html.DisplayFor(modelItem => item.Khoa)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.SDT)
+            @Html.DisplayFor(modelItem => item.Sdt)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
