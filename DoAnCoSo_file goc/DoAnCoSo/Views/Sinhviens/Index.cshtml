@@ -1,0 +1,163 @@
+﻿@model IEnumerable<DoAnCoSo.Models.Sinhvien>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<script>
+    function DownloadExcel()
+    {
+        window.location.href = "/Students/Download";
+    }
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Hoten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GioTinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NamSinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoiSinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Diachi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenCha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgheCha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenMe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgheMe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenNLL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChiNLL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SdtNLL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanToc.TenDT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KhoaHoc.TenKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lop.TenLop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NghanhHoc.TenNH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuanHuyen.TenQH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TonGiao.TenTG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TinhThanh.TenTT)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hoten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GioTinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NamSinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoiSinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenCha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgheCha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgheMe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNLL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChiNLL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SdtNLL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DanToc.TenDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhoaHoc.TenKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lop.TenLop)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NghanhHoc.TenNH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuanHuyen.TenQH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TonGiao.TenTG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TinhThanh.TenTT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MSSV }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MSSV }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MSSV })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,27 +1,202 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Student">
+  <EntityType Name="DanToc">
+    <Key>
+      <PropertyRef Name="MaDT" />
+    </Key>
+    <Property Name="MaDT" Type="int" Nullable="false" />
+    <Property Name="TenDT" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KhoaHoc">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TenKH" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="MaLop" />
+    </Key>
+    <Property Name="MaLop" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NghanhHoc">
+    <Key>
+      <PropertyRef Name="MaNH" />
+    </Key>
+    <Property Name="MaNH" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="TenNH" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuanHuyen">
+    <Key>
+      <PropertyRef Name="MaQH" />
+    </Key>
+    <Property Name="MaQH" Type="int" Nullable="false" />
+    <Property Name="TenQH" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sinhvien">
     <Key>
       <PropertyRef Name="MSSV" />
     </Key>
-    <Property Name="MSSV" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Ho" Type="nvarchar" MaxLength="50" />
-    <Property Name="Ten" Type="nvarchar" MaxLength="50" />
-    <Property Name="NgaySinh" Type="nchar" MaxLength="50" />
-    <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
-    <Property Name="GioiTinh" Type="nvarchar" MaxLength="20" />
-    <Property Name="DanToc" Type="nvarchar" MaxLength="50" />
-    <Property Name="TonGiao" Type="nvarchar" MaxLength="50" />
-    <Property Name="Diachithuongtru" Type="nvarchar" MaxLength="200" />
-    <Property Name="Tinh" Type="nvarchar" MaxLength="50" />
-    <Property Name="QuanHuyen" Type="nvarchar" MaxLength="50" />
-    <Property Name="QuocGia" Type="nvarchar" MaxLength="50" />
-    <Property Name="CMND" Type="nchar" MaxLength="10" />
-    <Property Name="DoanDang" Type="nvarchar" MaxLength="50" />
-    <Property Name="Uutien" Type="nvarchar" MaxLength="50" />
-    <Property Name="KhuVuc" Type="nvarchar" MaxLength="50" />
+    <Property Name="MSSV" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="Hoten" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="GioTinh" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="NamSinh" Type="date" Nullable="false" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="TenCha" Type="nvarchar" MaxLength="30" />
+    <Property Name="NgheCha" Type="nvarchar" MaxLength="40" />
+    <Property Name="TenMe" Type="nvarchar" MaxLength="30" />
+    <Property Name="NgheMe" Type="nvarchar" MaxLength="40" />
+    <Property Name="TenNLL" Type="nvarchar" MaxLength="30" />
+    <Property Name="DiaChiNLL" Type="nvarchar" MaxLength="60" />
+    <Property Name="SdtNLL" Type="varchar" MaxLength="11" />
+    <Property Name="MaDT" Type="int" />
+    <Property Name="MaTG" Type="int" />
+    <Property Name="MaTT" Type="int" />
+    <Property Name="MaQH" Type="int" />
+    <Property Name="MaKH" Type="char" MaxLength="3" />
+    <Property Name="MaNH" Type="char" MaxLength="5" />
+    <Property Name="MaLop" Type="varchar" MaxLength="10" />
   </EntityType>
+  <EntityType Name="TinhThanh">
+    <Key>
+      <PropertyRef Name="MaTT" />
+    </Key>
+    <Property Name="MaTT" Type="int" Nullable="false" />
+    <Property Name="TenTT" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TonGiao">
+    <Key>
+      <PropertyRef Name="MaTG" />
+    </Key>
+    <Property Name="MaTG" Type="int" Nullable="false" />
+    <Property Name="TenTG" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Sinhvien__MaDT__440B1D61">
+    <End Role="DanToc" Type="Self.DanToc" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DanToc">
+        <PropertyRef Name="MaDT" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaDT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaKH__47DBAE45">
+    <End Role="KhoaHoc" Type="Self.KhoaHoc" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhoaHoc">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaLop__49C3F6B7">
+    <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="MaLop" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaNH__48CFD27E">
+    <End Role="NghanhHoc" Type="Self.NghanhHoc" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NghanhHoc">
+        <PropertyRef Name="MaNH" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaNH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaQH__46E78A0C">
+    <End Role="QuanHuyen" Type="Self.QuanHuyen" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuanHuyen">
+        <PropertyRef Name="MaQH" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaQH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaTG__44FF419A">
+    <End Role="TonGiao" Type="Self.TonGiao" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TonGiao">
+        <PropertyRef Name="MaTG" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaTG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sinhvien__MaTT__45F365D3">
+    <End Role="TinhThanh" Type="Self.TinhThanh" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TinhThanh">
+        <PropertyRef Name="MaTT" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="MaTT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="DatabaseModelStoreContainer">
-    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanToc" EntityType="Self.DanToc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhoaHoc" EntityType="Self.KhoaHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NghanhHoc" EntityType="Self.NghanhHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuanHuyen" EntityType="Self.QuanHuyen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sinhvien" EntityType="Self.Sinhvien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinhThanh" EntityType="Self.TinhThanh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TonGiao" EntityType="Self.TonGiao" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Sinhvien__MaDT__440B1D61" Association="Self.FK__Sinhvien__MaDT__440B1D61">
+      <End Role="DanToc" EntitySet="DanToc" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaKH__47DBAE45" Association="Self.FK__Sinhvien__MaKH__47DBAE45">
+      <End Role="KhoaHoc" EntitySet="KhoaHoc" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaLop__49C3F6B7" Association="Self.FK__Sinhvien__MaLop__49C3F6B7">
+      <End Role="Lop" EntitySet="Lop" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaNH__48CFD27E" Association="Self.FK__Sinhvien__MaNH__48CFD27E">
+      <End Role="NghanhHoc" EntitySet="NghanhHoc" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaQH__46E78A0C" Association="Self.FK__Sinhvien__MaQH__46E78A0C">
+      <End Role="QuanHuyen" EntitySet="QuanHuyen" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaTG__44FF419A" Association="Self.FK__Sinhvien__MaTG__44FF419A">
+      <End Role="TonGiao" EntitySet="TonGiao" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sinhvien__MaTT__45F365D3" Association="Self.FK__Sinhvien__MaTT__45F365D3">
+      <End Role="TinhThanh" EntitySet="TinhThanh" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -21,7 +21,7 @@ namespace DoAnCoSo.Controllers
         // GET: Students
         public ActionResult Index()
         {
-            return View(db.Students.ToList());
+            return View(db.Sinhviens.ToList());
         }
 
         // GET: Students/Details/5
@@ -31,7 +31,7 @@ namespace DoAnCoSo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student student = db.Students.Find(id);
+            Sinhvien student = db.Sinhviens.Find(id);
             if (student == null)
             {
                 return HttpNotFound();
@@ -50,11 +50,11 @@ namespace DoAnCoSo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MSSV,Ho,Ten,NgaySinh,NoiSinh,GioiTinh,DanToc,TonGiao,Diachithuongtru,Tinh,QuanHuyen,QuocGia,CMND,DoanDang,Uutien,KhuVuc")] Student student)
+        public ActionResult Create([Bind(Include = "MSSV,Ho,Ten,NgaySinh,NoiSinh,GioiTinh,DanToc,TonGiao,Diachithuongtru,Tinh,QuanHuyen,QuocGia,CMND,DoanDang,Uutien,KhuVuc")] Sinhvien student)
         {
             if (ModelState.IsValid)
             {
-                db.Students.Add(student);
+                db.Sinhviens.Add(student);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -69,7 +69,7 @@ namespace DoAnCoSo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student student = db.Students.Find(id);
+            Sinhvien student = db.Sinhviens.Find(id);
             if (student == null)
             {
                 return HttpNotFound();
@@ -82,7 +82,7 @@ namespace DoAnCoSo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MSSV,Ho,Ten,NgaySinh,NoiSinh,GioiTinh,DanToc,TonGiao,Diachithuongtru,Tinh,QuanHuyen,QuocGia,CMND,DoanDang,Uutien,KhuVuc")] Student student)
+        public ActionResult Edit([Bind(Include = "MSSV,Ho,Ten,NgaySinh,NoiSinh,GioiTinh,DanToc,TonGiao,Diachithuongtru,Tinh,QuanHuyen,QuocGia,CMND,DoanDang,Uutien,KhuVuc")] Sinhvien student)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace DoAnCoSo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student student = db.Students.Find(id);
+            Sinhvien student = db.Sinhviens.Find(id);
             if (student == null)
             {
                 return HttpNotFound();
@@ -113,8 +113,8 @@ namespace DoAnCoSo.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Student student = db.Students.Find(id);
-            db.Students.Remove(student);
+            Sinhvien student = db.Sinhviens.Find(id);
+            db.Sinhviens.Remove(student);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
