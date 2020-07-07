@@ -5,7 +5,21 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="b885698dd858413a896d9454ced51ae2" Name="Diagram1">
-        <EntityTypeShape EntityType="DatabaseModel.Student" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.DanToc" Width="1.5" PointX="8.125" PointY="3.125" />
+        <EntityTypeShape EntityType="DatabaseModel.KhoaHoc" Width="1.5" PointX="3.75" PointY="8" />
+        <EntityTypeShape EntityType="DatabaseModel.Lop" Width="1.5" PointX="6.75" PointY="0.625" />
+        <EntityTypeShape EntityType="DatabaseModel.NghanhHoc" Width="1.5" PointX="0.875" PointY="0.75" />
+        <EntityTypeShape EntityType="DatabaseModel.QuanHuyen" Width="1.5" PointX="1" PointY="5.375" />
+        <EntityTypeShape EntityType="DatabaseModel.Sinhvien" Width="1.5" PointX="3.875" PointY="0.625" />
+        <EntityTypeShape EntityType="DatabaseModel.TinhThanh" Width="1.5" PointX="0.75" PointY="2.875" />
+        <EntityTypeShape EntityType="DatabaseModel.TonGiao" Width="1.5" PointX="7.125" PointY="5.375" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaDT__440B1D61" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaKH__47DBAE45" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaLop__49C3F6B7" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaNH__48CFD27E" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaQH__46E78A0C" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaTG__44FF419A" />
+        <AssociationConnector Association="DatabaseModel.FK__Sinhvien__MaTT__45F365D3" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

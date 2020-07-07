@@ -25,6 +25,13 @@ namespace DoAnCoSo.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<DanToc> DanTocs { get; set; }
+        public virtual DbSet<KhoaHoc> KhoaHocs { get; set; }
+        public virtual DbSet<Lop> Lops { get; set; }
+        public virtual DbSet<NghanhHoc> NghanhHocs { get; set; }
+        public virtual DbSet<QuanHuyen> QuanHuyens { get; set; }
+        public virtual DbSet<Sinhvien> Sinhviens { get; set; }
+        public virtual DbSet<TinhThanh> TinhThanhs { get; set; }
+        public virtual DbSet<TonGiao> TonGiaos { get; set; }
     }
 }
