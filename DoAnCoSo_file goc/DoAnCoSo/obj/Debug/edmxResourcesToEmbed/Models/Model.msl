@@ -4,6 +4,19 @@
     <EntitySetMapping Name="Students">
       <EntityTypeMapping TypeName="DatabaseModel.Student">
         <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="NgayCapCMND" ColumnName="NgayCapCMND" />
+          <ScalarProperty Name="LopSV" ColumnName="LopSV" />
+          <ScalarProperty Name="TenNghanh" ColumnName="TenNghanh" />
+          <ScalarProperty Name="DonVi" ColumnName="DonVi" />
+          <ScalarProperty Name="KhoaHoc" ColumnName="KhoaHoc" />
+          <ScalarProperty Name="NgheNghiepMe" ColumnName="NgheNghiepMe" />
+          <ScalarProperty Name="TenMe" ColumnName="TenMe" />
+          <ScalarProperty Name="NgheNghiepCha" ColumnName="NgheNghiepCha" />
+          <ScalarProperty Name="TenCha" ColumnName="TenCha" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DienThoaiDiDong" ColumnName="DienThoaiDiDong" />
+          <ScalarProperty Name="LoaiSV" ColumnName="LoaiSV" />
+          <ScalarProperty Name="NamSinh" ColumnName="NamSinh" />
           <ScalarProperty Name="MSSV" ColumnName="MSSV" />
           <ScalarProperty Name="Ho" ColumnName="Ho" />
           <ScalarProperty Name="Ten" ColumnName="Ten" />

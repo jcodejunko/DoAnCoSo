@@ -20,6 +20,19 @@
     <Property Name="DoanDang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Uutien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="KhuVuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoaiDiDong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenCha" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgheNghiepCha" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenMe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgheNghiepMe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KhoaHoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenNghanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LopSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapCMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Students" EntityType="Self.Student" />

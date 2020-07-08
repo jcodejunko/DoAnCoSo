@@ -8,7 +8,7 @@
     <Property Name="Ho" Type="nvarchar" MaxLength="50" />
     <Property Name="Ten" Type="nvarchar" MaxLength="50" />
     <Property Name="NgaySinh" Type="nchar" MaxLength="50" />
-    <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NamSinh" Type="nvarchar" MaxLength="50" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="20" />
     <Property Name="DanToc" Type="nvarchar" MaxLength="50" />
     <Property Name="TonGiao" Type="nvarchar" MaxLength="50" />
@@ -20,6 +20,19 @@
     <Property Name="DoanDang" Type="nvarchar" MaxLength="50" />
     <Property Name="Uutien" Type="nvarchar" MaxLength="50" />
     <Property Name="KhuVuc" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="DienThoaiDiDong" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenCha" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgheNghiepCha" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenMe" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgheNghiepMe" Type="nvarchar" MaxLength="50" />
+    <Property Name="KhoaHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="DonVi" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenNghanh" Type="nvarchar" MaxLength="50" />
+    <Property Name="LopSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapCMND" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="DatabaseModelStoreContainer">
     <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />

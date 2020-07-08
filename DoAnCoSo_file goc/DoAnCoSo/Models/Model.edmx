@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Student">
           <Key>
             <PropertyRef Name="MSSV" />
@@ -13,7 +13,7 @@
           <Property Name="Ho" Type="nvarchar" MaxLength="50" />
           <Property Name="Ten" Type="nvarchar" MaxLength="50" />
           <Property Name="NgaySinh" Type="nchar" MaxLength="50" />
-          <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
+          <Property Name="NamSinh" Type="nvarchar" MaxLength="50" />
           <Property Name="GioiTinh" Type="nvarchar" MaxLength="20" />
           <Property Name="DanToc" Type="nvarchar" MaxLength="50" />
           <Property Name="TonGiao" Type="nvarchar" MaxLength="50" />
@@ -25,12 +25,24 @@
           <Property Name="DoanDang" Type="nvarchar" MaxLength="50" />
           <Property Name="Uutien" Type="nvarchar" MaxLength="50" />
           <Property Name="KhuVuc" Type="nvarchar" MaxLength="50" />
+          <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
+          <Property Name="LoaiSV" Type="nvarchar" MaxLength="50" />
+          <Property Name="DienThoaiDiDong" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenCha" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgheNghiepCha" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenMe" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgheNghiepMe" Type="nvarchar" MaxLength="50" />
+          <Property Name="KhoaHoc" Type="nvarchar" MaxLength="50" />
+          <Property Name="DonVi" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenNghanh" Type="nvarchar" MaxLength="50" />
+          <Property Name="LopSV" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayCapCMND" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="DatabaseModelStoreContainer">
           <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -54,6 +66,19 @@
           <Property Name="DoanDang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Uutien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="KhuVuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LoaiSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DienThoaiDiDong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenCha" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgheNghiepCha" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenMe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgheNghiepMe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KhoaHoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenNghanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LopSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayCapCMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Students" EntityType="Self.Student" />
@@ -67,6 +92,19 @@
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="DatabaseModel.Student">
               <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="NgayCapCMND" ColumnName="NgayCapCMND" />
+                <ScalarProperty Name="LopSV" ColumnName="LopSV" />
+                <ScalarProperty Name="TenNghanh" ColumnName="TenNghanh" />
+                <ScalarProperty Name="DonVi" ColumnName="DonVi" />
+                <ScalarProperty Name="KhoaHoc" ColumnName="KhoaHoc" />
+                <ScalarProperty Name="NgheNghiepMe" ColumnName="NgheNghiepMe" />
+                <ScalarProperty Name="TenMe" ColumnName="TenMe" />
+                <ScalarProperty Name="NgheNghiepCha" ColumnName="NgheNghiepCha" />
+                <ScalarProperty Name="TenCha" ColumnName="TenCha" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DienThoaiDiDong" ColumnName="DienThoaiDiDong" />
+                <ScalarProperty Name="LoaiSV" ColumnName="LoaiSV" />
+                <ScalarProperty Name="NamSinh" ColumnName="NamSinh" />
                 <ScalarProperty Name="MSSV" ColumnName="MSSV" />
                 <ScalarProperty Name="Ho" ColumnName="Ho" />
                 <ScalarProperty Name="Ten" ColumnName="Ten" />

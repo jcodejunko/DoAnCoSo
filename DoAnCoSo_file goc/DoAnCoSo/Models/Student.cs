@@ -30,5 +30,18 @@ namespace DoAnCoSo.Models
         public string DoanDang { get; set; }
         public string Uutien { get; set; }
         public string KhuVuc { get; set; }
+        public string NamSinh { get; set; }
+        public string LoaiSV { get; set; }
+        public string DienThoaiDiDong { get; set; }
+        public string Email { get; set; }
+        public string TenCha { get; set; }
+        public string NgheNghiepCha { get; set; }
+        public string TenMe { get; set; }
+        public string NgheNghiepMe { get; set; }
+        public string KhoaHoc { get; set; }
+        public string DonVi { get; set; }
+        public string TenNghanh { get; set; }
+        public string LopSV { get; set; }
+        public string NgayCapCMND { get; set; }
     }
 }
